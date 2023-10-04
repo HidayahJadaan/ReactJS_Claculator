@@ -1,84 +1,71 @@
-*{
-   
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-
-    margin: 0;
-    background: linear-gradient(to right,#5761B2, #1FC5A8 );
-    font-family: luna;
+body {
+  margin: 0;
+  background: linear-gradient(to right, #5761b2, #1fc5a8);
 }
 
-h1{
-    color: #000;
-    text-shadow: 3px 3px #ccc;
-    text-align: center;
-    margin: 90px 0 0 0;
-    
-}
-.claculator-grid{
-
-    display: grid;
-    margin: 13rem auto;
-    justify-content: center;
-    grid-template-columns: repeat(4, 6rem); /*4 cols, 6rem width for each*/
-    grid-template-rows: minmax(7rem, auto) repeat(5, 5rem); /*5 rows with 5rem height each*/
-        border: 2px solid #6d6a6a;
-        width: fit-content;
-        border-radius: 10px;
-        box-shadow: -2px -2px 33px -3px rgba(255, 255,255,0.75);
--webkit-box-shadow: -2px -2px 33px -3px rgba(0, 0,0,0.75);
--moz-box-shadow: -2px -2px 33px -3px rgba(255, 255,255,0.75);
-
-    
-}
-
-
-.claculator-grid > button{
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 7px;
-    /* border: 1px solid #6d6a6a; */
-    margin: 1px;
-
+h1 {
+  color: #000;
+  text-shadow: 3px 3px #ccc;
+  text-align: center;
+  margin: 90px 0 0 0;
+  font-family: luna;
 
 }
-
-.claculator-grid > button:hover,
-.claculator-grid > button:focus{
-    background-color: rgba(255, 255, 255, 0.9);
-
+.claculator-grid {
+  display: grid;
+  margin: 13rem auto;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem); /*4 cols, 6rem width for each*/
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem); /*5 rows with 5rem height each*/
+  border: 2px solid #6d6a6a;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: -2px -2px 33px -3px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -2px -2px 33px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -2px 33px -3px rgba(255, 255, 255, 0.75);
 }
 
-.span-two{
-    grid-column: span 2;
+.claculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 7px;
+  /* border: 1px solid #6d6a6a; */
+  margin: 1px;
+}
+how i can make users to use ma react.js calculator app online from my repo without downloading it
+.claculator-grid > button:focus {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.output-screen{
-    /* border: 1px solid red; */
-    grid-column: 1 / -1; /* span from col 1 to col -1 */
-    background-color: rgba(0,0,0,0.75);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0.75rem;
-    word-wrap: break-word;
-    word-break: break-all;
-    border-radius: 10px ;
-
+.span-two {
+  grid-column: span 2;
 }
 
-
-.output-screen .previous-operand{
-
-    color: rgba(255,255,255,0.75);
-    font-size: 1.5rem;
+.output-screen {
+  /* border: 1px solid red; */
+  grid-column: 1 / -1; /* span from col 1 to col -1 */
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 10px;
 }
 
-.output-screen .current-operand{
-    color: white;
-    font-size: 2.5rem;
+.output-screen .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+}
+
+.output-screen .current-operand {
+  color: white;
+  font-size: 2rem;
 }
